@@ -43,7 +43,7 @@ class HeaderWithSearchBox extends StatelessWidget {
                       //       fontWeight: FontWeight.bold,
                       //     ),
                       GoogleFonts.poppins(
-                    color: Colors.white,
+                    color: Theme.of(context).colorScheme.secondary,
                     fontWeight: FontWeight.bold,
                     fontSize: 28,
                   ),
@@ -66,7 +66,7 @@ class HeaderWithSearchBox extends StatelessWidget {
               ),
               height: 54,
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: Theme.of(context).colorScheme.onPrimary,
                 borderRadius: BorderRadius.circular(24),
                 boxShadow: [
                   BoxShadow(
@@ -87,7 +87,8 @@ class HeaderWithSearchBox extends StatelessWidget {
                         decoration: InputDecoration(
                           hintText: "Search",
                           hintStyle: TextStyle(
-                            color: kPrimaryColor.withOpacity(0.5),
+                            color: kPrimaryColor.withOpacity(0.8),
+                            fontWeight: FontWeight.w500,
                           ),
                           enabledBorder: InputBorder.none,
                           focusedBorder: InputBorder.none,
@@ -97,6 +98,7 @@ class HeaderWithSearchBox extends StatelessWidget {
                     ),
                     SvgPicture.asset(
                       "assets/icons/search.svg",
+                      color: Theme.of(context).colorScheme.primary,
                     )
                   ],
                 ),
