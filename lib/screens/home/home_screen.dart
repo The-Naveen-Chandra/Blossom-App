@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:blossom_app/constant/constants.dart';
+import 'package:blossom_app/components/components.dart';
 import 'package:blossom_app/screens/home/components/body.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -12,6 +13,7 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: Theme.of(context).colorScheme.background,
       appBar: buildAppBar(),
       body: const Body(),
+      bottomNavigationBar: const MyBottomNavBar(),
     );
   }
 
