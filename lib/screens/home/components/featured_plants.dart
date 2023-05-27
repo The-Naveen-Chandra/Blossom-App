@@ -40,7 +40,7 @@ class FeaturedPlantCard extends StatelessWidget {
         margin: const EdgeInsets.only(
           left: kDefaultPadding,
           top: kDefaultPadding / 2,
-          bottom: kDefaultPadding,
+          bottom: kDefaultPadding / 2,
         ),
         width: size.width * 0.8,
         height: 185,

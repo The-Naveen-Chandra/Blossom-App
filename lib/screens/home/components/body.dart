@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:blossom_app/constant/constants.dart';
 import 'package:blossom_app/screens/home/components/components.dart';
 
 class Body extends StatelessWidget {
@@ -16,6 +17,7 @@ class Body extends StatelessWidget {
           const RecommendedPlants(),
           TextWithMoreBtn(title: "Featured Plants", onPressed: () {}),
           const FeaturedPlants(),
+          const SizedBox(height: kDefaultPadding,)
         ],
       ),
     );

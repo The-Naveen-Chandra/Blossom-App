@@ -39,7 +39,7 @@ class TextWithMoreBtn extends StatelessWidget {
                 "More",
                 style: GoogleFonts.poppins(
                   fontSize: 14,
-                  color: Colors.white,
+                  color: Theme.of(context).colorScheme.onSecondary,
                 ),
               ),
             ),
