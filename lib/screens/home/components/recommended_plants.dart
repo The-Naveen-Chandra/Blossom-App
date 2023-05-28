@@ -1,5 +1,6 @@
-import 'package:blossom_app/constant/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:blossom_app/constant/constants.dart';
+import 'package:blossom_app/screens/details/details_screen.dart';
 
 class RecommendedPlants extends StatelessWidget {
   const RecommendedPlants({
@@ -17,21 +18,42 @@ class RecommendedPlants extends StatelessWidget {
             country: "Russia",
             price: 400,
             imageSrc: "assets/images/image_1.png",
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const DetailsScreen(),
+                ),
+              );
+            },
           ),
           RecommendedPlantCard(
             title: "Angelic",
             country: "Russia",
             price: 700,
             imageSrc: "assets/images/image_2.png",
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const DetailsScreen(),
+                ),
+              );
+            },
           ),
           RecommendedPlantCard(
             title: "Lycian",
             country: "Russia",
             price: 200,
             imageSrc: "assets/images/image_3.png",
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const DetailsScreen(),
+                ),
+              );
+            },
           ),
         ],
       ),
@@ -56,22 +78,22 @@ class RecommendedPlantCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Container(
-      margin: const EdgeInsets.only(
-        left: kDefaultPadding,
-        top: kDefaultPadding / 2,
-        bottom: kDefaultPadding * 2.5,
-      ),
-      // it will cover 40% of our total width
-      width: size.width * 0.4,
-      child: Column(
-        children: [
-          Image.asset(
-            imageSrc,
-          ),
-          GestureDetector(
-            onTap: onPressed,
-            child: Container(
+    return GestureDetector(
+      onTap: onPressed,
+      child: Container(
+        margin: const EdgeInsets.only(
+          left: kDefaultPadding,
+          top: kDefaultPadding / 2,
+          bottom: kDefaultPadding * 2.5,
+        ),
+        // it will cover 40% of our total width
+        width: size.width * 0.4,
+        child: Column(
+          children: [
+            Image.asset(
+              imageSrc,
+            ),
+            Container(
               padding: const EdgeInsets.all(kDefaultPadding / 2),
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -118,8 +140,8 @@ class RecommendedPlantCard extends StatelessWidget {
                 ],
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
