@@ -9,7 +9,7 @@ ThemeData darkTheme = ThemeData(
     secondary: Colors.white,
     tertiary: kPrimaryColor,
     onPrimary: Colors.grey.shade200,
-    onSecondary: Colors.black,
+    onSecondary: Colors.grey.shade900,
   ),
   useMaterial3: true,
 );

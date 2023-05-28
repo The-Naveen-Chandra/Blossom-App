@@ -4,9 +4,9 @@ import 'package:blossom_app/constant/constants.dart';
 ThemeData lightTheme = ThemeData(
   brightness: Brightness.light,
   colorScheme: const ColorScheme.light(
-    background: Colors.white,
+    background: kBackgroundColor,
     primary: Colors.black,
-    secondary: Colors.white,
+    secondary: Colors.black,
     tertiary: kPrimaryColor,
     onPrimary: Colors.white,
     onSecondary: Colors.white,
