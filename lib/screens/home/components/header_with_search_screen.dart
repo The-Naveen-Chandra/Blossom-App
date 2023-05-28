@@ -43,7 +43,7 @@ class HeaderWithSearchBox extends StatelessWidget {
                       //       fontWeight: FontWeight.bold,
                       //     ),
                       GoogleFonts.poppins(
-                    color: Theme.of(context).colorScheme.secondary,
+                    color: Theme.of(context).colorScheme.onSecondary,
                     fontWeight: FontWeight.bold,
                     fontSize: 28,
                   ),
@@ -98,6 +98,7 @@ class HeaderWithSearchBox extends StatelessWidget {
                     ),
                     SvgPicture.asset(
                       "assets/icons/search.svg",
+                      // ignore: deprecated_member_use
                       color: Theme.of(context).colorScheme.primary,
                     )
                   ],
